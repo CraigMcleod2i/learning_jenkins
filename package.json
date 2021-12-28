@@ -18,6 +18,8 @@
   "homepage": "https://github.com/CraigMcleod2i/learning_jenkins#readme",
   "dependencies": {
     "axios": "^0.24.0",
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "http-server": "^14.0.0",
+    "live-server": "^1.2.1"
   }
 }

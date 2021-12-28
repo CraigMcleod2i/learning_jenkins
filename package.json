@@ -1,0 +1,23 @@
+{
+  "name": "jenkins_learning",
+  "version": "1.0.0",
+  "description": "\"# learning_jenkins\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CraigMcleod2i/learning_jenkins.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CraigMcleod2i/learning_jenkins/issues"
+  },
+  "homepage": "https://github.com/CraigMcleod2i/learning_jenkins#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0"
+  }
+}

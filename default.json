@@ -4,5 +4,17 @@
       "test_description": "12345",
       "id": 3
     }
+  ],
+  "restAssured": [
+    {
+      "name": "Craig",
+      "id": "1"
+    },
+    {
+      "id": 999,
+      "email": "frank.sidebottom@reqres.in",
+      "firstName": "Frank",
+      "lastName": "Sidebottom"
+    }
   ]
 }

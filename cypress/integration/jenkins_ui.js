@@ -18,7 +18,7 @@ describe('Run some arbitrary UI tests', () => {
     it('cleans up the database', () => {
         cy.get('p').last().should('have.attr', 'value')
             .then(res => {
-                cy.request('DELETE', 'http://localhost:3000/test/'+res)
+                cy.request('DELETE', 'http://localhost:3010/test/'+res)
                 cy.reload()
                 cy.get('p').last().should('not.have.attr', 'value', res)
             })

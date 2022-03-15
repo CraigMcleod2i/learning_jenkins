@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetchData()
+    fetchData();
+    // a comment
 });
 
 function handleSubmit(event){

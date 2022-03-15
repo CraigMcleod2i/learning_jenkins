@@ -4,25 +4,14 @@
 describe('Run some arbitrary UI tests', () => {
     
     before(() => {
-        cy.visit('http://127.0.0.1:8081')
+        cy.visit('https://the-internet.herokuapp.com/checkboxes')
     })
 
-    it('has an input', () => {
-        cy.get('#post-field').should('have.attr', 'type', 'text')
+    it('has an checkbox', () => {
+        cy.get('#checkboxes input').eq(1).click();
     })
-    it('adds a new record via the input', () => {
-        cy.get('#post-field').type('12345')
-        cy.get('#main button').click().wait(100)
-        cy.get('p').last().contains('12345')
-    })
-    it('cleans up the database', () => {
-        cy.get('p').last().should('have.attr', 'value')
-            .then(res => {
-                cy.request('DELETE', 'http://localhost:3010/test/'+res)
-                cy.reload()
-                cy.get('p').last().should('not.have.attr', 'value', res)
-            })
-        
+    it('has a checked attribute true', () => {
+        cy.get('#checkboxes input').should('have.attr', 'checked', true);
     })
 
 })

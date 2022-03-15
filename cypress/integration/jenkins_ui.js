@@ -11,7 +11,7 @@ describe('Run some arbitrary UI tests', () => {
         cy.get('#checkboxes input').eq(1).check();
     })
     it('has a checked attribute true', () => {
-        cy.get('#checkboxes input').should('have.attr', 'checked', true);
+        cy.get('#checkboxes input').should('be.checked');
     })
 
 })
